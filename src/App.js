@@ -4,6 +4,7 @@ import About from "./components/About";
 import Discography from "./components/Discography";
 import Clips from "./components/Clips";
 import Contact from "./components/Contact";
+import Player from "./components/Player";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Discography />
       <Clips />
+      <Player />
       <Contact />
       <footer>by Maciek</footer>
     </div>

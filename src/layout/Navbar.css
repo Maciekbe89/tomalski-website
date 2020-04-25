@@ -1,6 +1,6 @@
 .navbar-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   position: sticky;
   top: 0px;
   width: 100%;
@@ -9,13 +9,40 @@
   /* overflow: hidden; */
 }
 
+.navbar-logo-container {
+  display: flex;
+  flex-basis: 150px;
+}
+
 .navbar-logo {
   height: 50px;
-  /* line-height: 50px; */
+  align-self: center;
+  margin: 0px 10px 0 10px;
+  /* justify-self: center; */
+  /* vertical-align: middle; */
+  /* line-height: 55px; */
   /* text-align: center; */
 }
 
-/* .navbar-items {
+.navbar-items-container {
+  margin: auto 0 auto auto;
+}
+
+.navbar-items {
   display: flex;
-  flex-direction: column;
-} */
+  list-style: none;
+  /* align-self: center; */
+  /* justify-self: flex-end; */
+  /* margin: auto 0; */
+  /* flex-direction: column; */
+}
+
+.navbar-item {
+  width: 100px;
+  text-align: center;
+  margin-right: 10px;
+  /* text-align: center; */
+  /* line-height: 55px; */
+  background-color: yellow;
+  cursor: pointer;
+}
