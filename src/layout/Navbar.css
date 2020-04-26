@@ -5,7 +5,8 @@
   top: 0px;
   width: 100%;
   height: 55px;
-  background-color: #666;
+  background-color: #000;
+  /* opacity: 0.8; */
   /* overflow: hidden; */
 }
 
@@ -15,9 +16,11 @@
 }
 
 .navbar-logo {
-  height: 50px;
+  width: 150px;
   align-self: center;
-  margin: 0px 10px 0 10px;
+  margin: 30px 15px 0 15px;
+  cursor: pointer;
+  /* color: #a6d900; */
   /* justify-self: center; */
   /* vertical-align: middle; */
   /* line-height: 55px; */
@@ -35,14 +38,22 @@
   /* justify-self: flex-end; */
   /* margin: auto 0; */
   /* flex-direction: column; */
+  /* transition: ease 2s; */
 }
 
 .navbar-item {
-  width: 100px;
-  text-align: center;
-  margin-right: 10px;
+  /* width: 100px; */
+  color: #f79c00;
+  /* text-align: center; */
+  margin-right: 60px;
   /* text-align: center; */
   /* line-height: 55px; */
-  background-color: yellow;
+  /* background-color: yellow; */
   cursor: pointer;
+}
+
+.navbar-items > .active {
+  /* z-index: 1; */
+  /* background-color: yellow; */
+  border-bottom: 1px solid #fff;
 }
