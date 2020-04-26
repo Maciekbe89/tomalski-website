@@ -16,7 +16,13 @@ function App() {
       <Clips />
       <Player />
       <Contact />
-      <footer>by Maciek</footer>
+      <footer>
+        by{" "}
+        <a className="link" href="https://github.com/Maciekbe89">
+          maciekbe89
+        </a>{" "}
+        · warsaw 2020
+      </footer>
     </div>
   );
 }

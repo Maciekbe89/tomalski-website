@@ -19,4 +19,13 @@
 footer {
   height: 30px;
   border-top: solid 1px black;
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 10px;
+  color: #f79c00;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
 }
