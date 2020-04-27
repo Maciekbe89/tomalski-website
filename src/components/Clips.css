@@ -1,9 +1,9 @@
 .clips-container {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: space-evenly;
+  background-image: linear-gradient(30deg, #1c1a18 60%, var(--main-color) 200%);
 }
 
 .clip-yt {
@@ -11,7 +11,7 @@
   height: 315px;
   /* text-align: center; */
   border: none;
-  border-top: solid 3px #f79c00;
+  border-top: solid 3px var(--main-color);
   /* align-self: center; */
 }
 

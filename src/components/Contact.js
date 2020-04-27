@@ -16,7 +16,7 @@ const Contact = () => {
           <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
           {/* <p className="contact-text"> */}
           <a
-            className="link contact-text "
+            className="contact-text contact-link"
             href="https://www.instagram.com/tomalski1986/">
             @tomalski1986
           </a>
@@ -31,13 +31,13 @@ const Contact = () => {
         <p className="contact-dots">·</p>
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faYoutubeSquare} />
-          <p className="contact-text">
-            <a
-              className="link"
-              href="https://www.youtube.com/channel/UCOUXpUCFKGvMcHrvpJnraew">
-              @tomalski1986
-            </a>
-          </p>
+          {/* <p className="contact-text"> */}
+          <a
+            className="contact-text contact-link"
+            href="https://www.youtube.com/channel/UCOUXpUCFKGvMcHrvpJnraew">
+            @tomalski1986
+          </a>
+          {/* </p> */}
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import TmlLogo from "../assets/logo2.png";
 import {Link, animateScroll as scroll} from "react-scroll";
-import navbarLinks from "./NavbarLinks";
+import navbarLinks from "../utils/NavbarLinks";
 import "./Navbar.css";
 
 const Navbar = () => {

@@ -10,7 +10,7 @@
   align-self: center;
   justify-self: center;
   font-size: 80px;
-  color: #f79c00;
+  color: var(--main-color);
   /* border-bottom: solid 2px #f79c00; */
 }
 
@@ -33,7 +33,7 @@
 
 .icon {
   font-size: 80px;
-  color: #f79c00;
+  color: var(--main-color);
   /* align-self: center; */
   /* margin: 0 auto; */
   /* justify-self: center; */
@@ -44,8 +44,24 @@
   color: white;
 }
 
-.contact-text,
-.contact-text .link {
+.contact-text {
   color: white;
   font-size: 28px;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.4s;
+}
+
+.contact-link:hover::after {
+  width: 100%;
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "./layout/Navbar";
 import About from "./components/About";
-import Discography from "./components/Discography";
+import Discography from "./components/Discography/Discography";
 import Clips from "./components/Clips";
 import Contact from "./components/Contact";
 import Player from "./components/Player";
+import Footer from "./layout/Footer";
 import "./App.css";
 
 function App() {
@@ -16,13 +17,7 @@ function App() {
       <Clips />
       <Player />
       <Contact />
-      <footer>
-        by{" "}
-        <a className="link" href="https://github.com/Maciekbe89">
-          maciekbe89
-        </a>{" "}
-        · warsaw 2020
-      </footer>
+      <Footer />
     </div>
   );
 }
