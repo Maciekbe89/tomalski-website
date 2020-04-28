@@ -2,8 +2,11 @@
   height: calc(100vh - 55px - 30px);
   display: grid;
   grid-template-rows: 3fr 5fr 1fr;
-  /* align-items: center; */
-  /* justify-content: space-evenly; */
+  background-image: linear-gradient(
+    341deg,
+    #1c1a18 70%,
+    var(--main-color) 200%
+  );
 }
 
 .contact-title {
@@ -11,15 +14,12 @@
   justify-self: center;
   font-size: 80px;
   color: var(--main-color);
-  /* border-bottom: solid 2px #f79c00; */
 }
 
 .icons-container {
   display: flex;
   align-self: center;
   justify-self: center;
-  /* border-bottom: solid #f79c00; */
-  /* margin-top: 30px; */
 }
 
 .icon-container {
@@ -27,16 +27,11 @@
   flex-direction: column;
   width: 32vw;
   align-items: center;
-
-  /* justify-content: center; */
 }
 
 .icon {
   font-size: 80px;
   color: var(--main-color);
-  /* align-self: center; */
-  /* margin: 0 auto; */
-  /* justify-self: center; */
 }
 
 .contact-dots {

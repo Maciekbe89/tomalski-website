@@ -7,16 +7,16 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar-container">
-      <div className="navbar-logo-container">
-        <img
-          className="navbar-logo"
-          src={TmlLogo}
-          alt="tml logo"
-          onClick={() => {
-            scroll.scrollToTop();
-          }}
-        />
-      </div>
+      {/* <div className="navbar-logo-container"> */}
+      <img
+        className="navbar-logo"
+        src={TmlLogo}
+        alt="tml logo"
+        onClick={() => {
+          scroll.scrollToTop();
+        }}
+      />
+      {/* </div> */}
       <div className="navbar-items-container">
         <ul className="navbar-items">
           {navbarLinks.map((navbarLink) => (

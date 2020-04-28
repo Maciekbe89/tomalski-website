@@ -10,7 +10,7 @@ const Player = () => {
       <div className="music-player">
         <MusicPlayer
           playlist={playlist}
-          style={{color: "white"}}
+          // style={{color: "white"}}
           progressColor="#f79c00"
           btnColor="white"
           width="100%"

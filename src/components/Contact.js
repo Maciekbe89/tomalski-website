@@ -13,14 +13,12 @@ const Contact = () => {
       <h1 className="contact-title">Kontakt</h1>
       <div className="icons-container">
         <div className="icon-container">
-          <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
-          {/* <p className="contact-text"> */}
+          <FontAwesomeIcon className="icon" icon={faYoutubeSquare} />
           <a
             className="contact-text contact-link"
-            href="https://www.instagram.com/tomalski1986/">
+            href="https://www.youtube.com/channel/UCOUXpUCFKGvMcHrvpJnraew">
             @tomalski1986
           </a>
-          {/* </p> */}
         </div>
 
         <p className="contact-dots">·</p>
@@ -30,14 +28,12 @@ const Contact = () => {
         </div>
         <p className="contact-dots">·</p>
         <div className="icon-container">
-          <FontAwesomeIcon className="icon" icon={faYoutubeSquare} />
-          {/* <p className="contact-text"> */}
+          <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
           <a
             className="contact-text contact-link"
-            href="https://www.youtube.com/channel/UCOUXpUCFKGvMcHrvpJnraew">
+            href="https://www.instagram.com/tomalski1986/">
             @tomalski1986
           </a>
-          {/* </p> */}
         </div>
       </div>
     </div>
