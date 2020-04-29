@@ -1,12 +1,14 @@
 import React from "react";
 import "./DiscographyItem.css";
-// import coverInfos from "../../utils/CoverInfos";
 
-const DiscographyItem = ({title, coverCD}) => {
+const DiscographyItem = ({title, coverCdFront, coverCdBack}) => {
   return (
     <div className="item-container" key={title}>
       <h1 className="cover-title">{title}</h1>
-      <img className="cover" src={coverCD} alt="cover" />
+      <div className="thecard">
+        <img className="cover front" src={coverCdFront} alt="cover" />
+        <img className="cover back" src={coverCdBack} alt="cover" />
+      </div>
       <button className="download-button">ściągnij płyte</button>
     </div>
   );

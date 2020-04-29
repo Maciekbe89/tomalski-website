@@ -7,7 +7,7 @@
 }
 
 .cover {
-  width: 75%;
+  width: 100%;
   border-top: solid 3px var(--main-color);
 }
 
@@ -33,4 +33,24 @@
   color: var(--main-color);
   background-color: #fff;
   letter-spacing: 0.4px;
+}
+
+.thecard {
+  width: 75%;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
