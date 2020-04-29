@@ -10,17 +10,16 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container" id="contact">
-      <h1 className="contact-title">Kontakt</h1>
+      <h1 className="contact-title title">Kontakt</h1>
       <div className="icons-container">
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faYoutubeSquare} />
           <a
-            className="contact-text contact-link"
+            className="contact-text link contact-link"
             href="https://www.youtube.com/channel/UCOUXpUCFKGvMcHrvpJnraew">
             @tomalski1986
           </a>
         </div>
-
         <p className="contact-dots">·</p>
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} />
@@ -30,7 +29,7 @@ const Contact = () => {
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
           <a
-            className="contact-text contact-link"
+            className="contact-text link contact-link"
             href="https://www.instagram.com/tomalski1986/">
             @tomalski1986
           </a>

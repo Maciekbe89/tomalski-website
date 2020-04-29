@@ -9,11 +9,8 @@
   );
 }
 
-.contact-title {
-  align-self: center;
-  justify-self: center;
+.contact-container .contact-title {
   font-size: 80px;
-  color: var(--main-color);
 }
 
 .icons-container {
@@ -32,20 +29,16 @@
 .icon {
   font-size: 80px;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .contact-dots {
   font-size: 50px;
-  color: white;
 }
 
 .contact-text {
   color: white;
   font-size: 28px;
-}
-
-.contact-link {
-  text-decoration: none;
 }
 
 .contact-link:after {

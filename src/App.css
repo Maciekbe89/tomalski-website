@@ -24,3 +24,10 @@
   text-decoration: none;
   color: #fff;
 }
+
+.title {
+  align-self: center;
+  justify-self: center;
+  font-size: 60px;
+  color: var(--main-color);
+}

@@ -8,13 +8,6 @@
   );
 }
 
-.discography-title {
-  align-self: center;
-  justify-self: center;
-  font-size: 60px;
-  color: var(--main-color);
-}
-
 .cds-container {
   display: flex;
   margin: 0 auto;

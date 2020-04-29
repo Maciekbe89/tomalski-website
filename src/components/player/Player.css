@@ -6,23 +6,17 @@
     #1c1a18 70%,
     var(--main-color) 200%
   );
-  /* margin: auto; */
-  /* width: 70vw; */
-  /* height: 150px; */
-  /* border-top: solid 3px var(--main-color); */
 }
 
-.player-title {
+/* .player-title {
   align-self: center;
   justify-self: center;
   font-size: 60px;
   color: var(--main-color);
-}
+} */
 
 .music-player {
   width: 70vw;
-  /* height: 150px; */
-  /* justify-self: center; */
   margin: auto;
   padding-bottom: 70px;
   border-bottom: solid 3px var(--main-color);
