@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from "react";
 import DiscographyItem from "./DiscographyItem";
 import coverInfos from "../../utils/CoverInfos";
 import "./Discography.css";

@@ -12,3 +12,13 @@
   display: flex;
   margin: 0 auto;
 }
+
+@media (orientation: portrait) and (min-width: 320px) {
+  .discography-container {
+    min-height: calc(260vh - 55px);
+  }
+  .cds-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

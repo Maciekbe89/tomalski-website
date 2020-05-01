@@ -31,3 +31,21 @@
   font-size: 60px;
   color: var(--main-color);
 }
+
+@media (orientation: portrait) and (min-width: 320px) {
+  .main-container {
+    /* display: flex;
+    flex-direction: column; */
+    /* overflow: hidden; */
+    /* min-height: calc(200vh - 55px); */
+  }
+  .pages-container {
+    display: flex;
+    flex-direction: column;
+    /* min-height: calc(120vh - 55px); */
+  }
+
+  .title {
+    font-size: 44px;
+  }
+}

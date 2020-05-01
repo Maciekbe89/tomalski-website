@@ -53,3 +53,20 @@
 .contact-link:hover::after {
   width: 100%;
 }
+
+@media (orientation: portrait) and (min-width: 320px) {
+  .contact-container {
+    height: 120vh;
+  }
+
+  .icons-container {
+    flex-direction: column;
+  }
+  .contact-container .contact-title {
+    font-size: 44px;
+  }
+
+  .contact-dots {
+    align-self: center;
+  }
+}

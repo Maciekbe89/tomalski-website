@@ -54,3 +54,10 @@
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
+
+@media (orientation: portrait) and (min-width: 320px) {
+  .item-container {
+    width: 100vw;
+    height: 75vh;
+  }
+}
