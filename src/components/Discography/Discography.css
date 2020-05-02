@@ -16,6 +16,11 @@
 @media (orientation: portrait) and (min-width: 320px) {
   .discography-container {
     min-height: calc(260vh - 55px);
+    background-image: linear-gradient(
+      121deg,
+      #1c1a18 60%,
+      var(--main-color) 200%
+    );
   }
   .cds-container {
     display: flex;

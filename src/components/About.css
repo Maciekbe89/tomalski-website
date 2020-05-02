@@ -44,4 +44,8 @@
     margin: 20px 15px;
     padding-bottom: 40px;
   }
+  .image-about {
+    width: 80vw;
+    height: auto;
+  }
 }
