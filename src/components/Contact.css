@@ -56,7 +56,7 @@
 
 @media (orientation: portrait) and (min-width: 320px) {
   .contact-container {
-    height: 120vh;
+    height: 100vh;
     background-image: linear-gradient(
       336deg,
       #1c1a18 70%,

@@ -12,6 +12,7 @@ const Player = () => {
           playlist={playlist}
           style={{
             fontSize: "22px",
+            color: "#f79c00",
           }}
           mode="vertical"
           progressColor="#f79c00"
