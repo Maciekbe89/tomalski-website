@@ -56,7 +56,7 @@
 
 @media (orientation: portrait) and (min-width: 320px) {
   .contact-container {
-    height: 100vh;
+    min-height: 120vh;
     background-image: linear-gradient(
       336deg,
       #1c1a18 70%,
@@ -73,5 +73,11 @@
 
   .contact-dots {
     align-self: center;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  .contact-container {
+    min-height: 110vh;
   }
 }
