@@ -1,6 +1,6 @@
 import React from "react";
 import TmlPortait from "../assets/tml.png";
-import "./About.css";
+import "./About.scss";
 
 const About = () => {
   return (

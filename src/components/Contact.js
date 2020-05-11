@@ -5,7 +5,7 @@ import {
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import {faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
-import "./Contact.css";
+import "./Contact.scss";
 
 const Contact = () => {
   return (

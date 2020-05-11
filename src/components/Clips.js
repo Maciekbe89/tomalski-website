@@ -1,5 +1,5 @@
 import React from "react";
-import "./Clips.css";
+import "./Clips.scss";
 
 const videoSrc = "https://www.youtube.com/embed/e4a4RE540wg";
 

@@ -6,7 +6,7 @@ import Clips from "./components/Clips";
 import Contact from "./components/Contact";
 import Player from "./components/player/Player";
 import Footer from "./layout/Footer";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

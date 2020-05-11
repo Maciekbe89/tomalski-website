@@ -1,5 +1,5 @@
 import React from "react";
-import "./DiscographyItem.css";
+import "./DiscographyItem.scss";
 
 const DiscographyItem = ({title, coverCdFront, coverCdBack}) => {
   return (
