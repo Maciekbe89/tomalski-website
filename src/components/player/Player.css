@@ -13,17 +13,15 @@
   align-self: center;
   color: #fff;
   padding-top: 70px;
-  /* border-top: solid 3px var(--main-color); */
+  border-top: solid 3px var(--main-color);
 }
 
 @media (orientation: portrait) and (min-width: 320px) {
   .player-container {
     min-height: calc(100vh - 55px);
-    /* border-top: solid 3px var(--main-color); */
   }
 
   .music-player {
     padding-top: 0;
-    /* margin-bottom: 40px; */
   }
 }
