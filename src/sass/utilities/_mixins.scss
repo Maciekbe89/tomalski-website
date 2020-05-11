@@ -1,0 +1,14 @@
+@mixin pageContainer($display, $footer: false) {
+  display: $display;
+  height: calc(100vh - 55px);
+  @if $footer {
+    height: calc(100vh - 85px);
+  }
+}
+
+@mixin title($size) {
+  align-self: center;
+  justify-self: center;
+  font-size: $size;
+  color: $main-color;
+}

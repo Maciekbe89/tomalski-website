@@ -10,7 +10,7 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <div className="contact-container" id="contact">
-      <h1 className="contact-title title">Kontakt</h1>
+      <h1 className="title">Kontakt</h1>
       <div className="icons-container">
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faYoutubeSquare} />

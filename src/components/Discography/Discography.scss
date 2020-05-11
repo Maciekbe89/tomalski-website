@@ -1,11 +1,13 @@
+@import "../../sass/utilities/variables";
+@import "../../sass/utilities/mixins";
+
 .discography-container {
-  display: grid;
+  @include pageContainer(grid);
   grid-template-rows: 90px 5fr;
-  background-image: linear-gradient(
-    150deg,
-    #1c1a18 60%,
-    var(--main-color) 200%
-  );
+  background-image: linear-gradient(150deg, $bg-color 60%, $main-color 200%);
+  .title {
+    @include title(60px);
+  }
 }
 
 .cds-container {
@@ -16,11 +18,7 @@
 @media (orientation: portrait) and (min-width: 320px) {
   .discography-container {
     min-height: calc(260vh - 55px);
-    background-image: linear-gradient(
-      121deg,
-      #1c1a18 60%,
-      var(--main-color) 200%
-    );
+    background-image: linear-gradient(121deg, $bg-color 60%, $main-color 200%);
   }
   .cds-container {
     display: flex;

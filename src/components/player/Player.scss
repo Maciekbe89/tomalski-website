@@ -1,5 +1,8 @@
+@import "../../sass/utilities/variables";
+@import "../../sass/utilities/mixins";
+
 .player-container {
-  display: flex;
+  @include pageContainer(flex);
   justify-content: center;
   background-image: linear-gradient(
     200deg,
@@ -10,6 +13,7 @@
 
 .music-player {
   width: 70vw;
+
   align-self: center;
   color: #fff;
   padding-top: 70px;
@@ -22,6 +26,7 @@
   }
 
   .music-player {
-    padding-top: 0;
+    width: 80vw;
+    padding-top: 30px;
   }
 }

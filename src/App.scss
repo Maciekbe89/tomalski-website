@@ -11,40 +11,40 @@
   --main-color: #f79c00;
 }
 
-body::-webkit-scrollbar {
-  width: 10px;
-  background-color: #555;
-}
+// body::-webkit-scrollbar {
+//   width: 10px;
+//   background-color: #555;
+// }
 
-body::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-  border-radius: 10px;
-}
+// body::-webkit-scrollbar-thumb {
+//   background-color: var(--main-color);
+//   border-radius: 10px;
+// }
 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px #000;
-}
+// body::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 10px #000;
+// }
 
-.main-container {
-  background-color: #1c1a18;
-  color: #fff;
-}
+// .main-container {
+//   background-color: #1c1a18;
+//   color: #fff;
+// }
 
-.pages-container {
-  height: calc(100vh - 55px);
-}
+// .pages-container {
+//   height: calc(100vh - 55px);
+// }
 
 .link {
   text-decoration: none;
   color: #fff;
 }
 
-.title {
-  align-self: center;
-  justify-self: center;
-  font-size: 60px;
-  color: var(--main-color);
-}
+// .title {
+//   align-self: center;
+//   justify-self: center;
+//   font-size: 60px;
+//   color: var(--main-color);
+// }
 
 @media (orientation: portrait) and (min-width: 320px) {
   .pages-container {
