@@ -8,20 +8,21 @@
   .title {
     @include title(60px);
   }
-}
-
-.cds-container {
-  display: flex;
-  margin: 0 auto;
+  .cds-container {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 320px) {
   .discography-container {
-    min-height: calc(260vh - 55px);
+    min-height: 250vh;
     background-image: linear-gradient(121deg, $bg-color 60%, $main-color 200%);
-  }
-  .cds-container {
-    display: flex;
-    flex-direction: column;
+    .title {
+      font-size: 44px;
+    }
+    .cds-container {
+      @include flexAlignCenter(column);
+    }
   }
 }

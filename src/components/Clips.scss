@@ -3,10 +3,10 @@
 
 .clips-container {
   @include pageContainer(flex);
+  @include bgGradient(30deg);
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-image: linear-gradient(30deg, #1c1a18 60%, var(--main-color) 200%);
 }
 
 .clip-yt {
