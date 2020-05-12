@@ -12,3 +12,13 @@
   font-size: $size;
   color: $main-color;
 }
+
+@mixin bgGradient($deg) {
+  background-image: linear-gradient($deg, $bg-color 60%, $main-color 200%);
+}
+
+@mixin flexAlignCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}

@@ -20,12 +20,10 @@ const Contact = () => {
             @tomalski1986
           </a>
         </div>
-        <p className="contact-dots">·</p>
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} />
           <p className="contact-text">tomalski1986@gmail.com</p>
         </div>
-        <p className="contact-dots">·</p>
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
           <a
