@@ -4,3 +4,17 @@ $main-font: "Oswald", sans-serif;
 $main-color: #f79c00;
 $bg-color: #1c1a18;
 $border: solid 3px $main-color;
+$breakpoints: (
+  "mobileSmall": (
+    min-width: 320px,
+  ),
+  "mobileMedium": (
+    min-width: 375px,
+  ),
+  "mobileLarge": (
+    min-width: 414px,
+  ),
+  "webMedium": (
+    max-width: 750px,
+  ),
+);
