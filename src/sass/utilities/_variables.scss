@@ -6,13 +6,28 @@ $bg-color: #1c1a18;
 $border: solid 3px $main-color;
 $breakpoints: (
   "mobileSmall": (
-    min-width: 320px,
+    (
+        orientation: portrait,
+      )
+      (
+        min-width: 320px,
+      ),
   ),
   "mobileMedium": (
-    min-width: 375px,
+    (
+        orientation: portrait,
+      )
+      (
+        min-width: 375px,
+      ),
   ),
   "mobileLarge": (
-    min-width: 414px,
+    (
+        orientation: portrait,
+      )
+      (
+        min-width: 414px,
+      ),
   ),
   "webMedium": (
     max-width: 750px,

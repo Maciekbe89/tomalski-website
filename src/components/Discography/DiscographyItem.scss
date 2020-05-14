@@ -3,9 +3,12 @@
 
 .item-container {
   @include flexAlignCenter(column);
-  width: 32.9vw;
+  width: 32.5vw;
   justify-content: space-evenly;
-
+  @include respond-to("mobileSmall") {
+    width: 100vw;
+    height: 75vh;
+  }
   .cover {
     width: 100%;
     border-top: $border;
@@ -52,11 +55,5 @@
       backface-visibility: hidden;
       transform: rotateY(180deg);
     }
-  }
-}
-@media (orientation: portrait) and (min-width: 320px) {
-  .item-container {
-    width: 100vw;
-    height: 75vh;
   }
 }
