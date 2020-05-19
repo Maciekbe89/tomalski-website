@@ -5,26 +5,26 @@
   @include pageContainer(grid, $footer: true);
   @include bgGradient(341deg);
   grid-template-rows: 3fr 5fr 1fr;
-  @include respond-to("mobileSmall") {
+  @include respond-to(mobileSmall) {
     min-height: 120vh;
     @include bgGradient(336deg);
   }
   .title {
     @include title(80px);
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       font-size: 44px;
     }
   }
   .icons-container {
     @include flexAlignCenter(row);
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       flex-direction: column;
     }
   }
   .icon-container {
     @include flexAlignCenter(column);
     width: 32.9vw;
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       height: 33vh;
     }
   }

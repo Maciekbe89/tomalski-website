@@ -41,7 +41,7 @@
         margin-right: 60px;
         padding-bottom: 2px;
         cursor: pointer;
-        @include respond-to("webMedium") {
+        @include respond-to(webMedium) {
           margin: 0;
           font-size: 22px;
         }
@@ -53,7 +53,7 @@
     .burger {
       display: none;
       cursor: pointer;
-      @include respond-to("webMedium") {
+      @include respond-to(webMedium) {
         display: block;
         margin-right: 35px;
       }
@@ -66,7 +66,7 @@
         border-radius: 5px;
       }
     }
-    @include respond-to("webMedium") {
+    @include respond-to(webMedium) {
       .nav-active {
         transform: translateX(0%);
       }

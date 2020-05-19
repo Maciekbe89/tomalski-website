@@ -27,7 +27,7 @@
     align-self: center;
     justify-self: center;
     border-top: $border;
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       width: 80vw;
       height: auto;
     }
@@ -40,7 +40,7 @@
     padding-bottom: 80px;
     border-bottom: $border;
     text-align: justify;
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       font-size: 18px;
       margin: 20px 15px;
       padding-bottom: 40px;

@@ -6,20 +6,20 @@
   grid-template-rows: 100px 5fr;
   @include bgGradient(150deg);
 
-  @include respond-to("mobileSmall") {
+  @include respond-to(mobileSmall) {
     @include bgGradient(121deg);
     min-height: 250vh;
   }
   .title {
     @include title(60px);
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       font-size: 44px;
     }
   }
   .cds-container {
     display: flex;
     margin: 0 auto;
-    @include respond-to("mobileSmall") {
+    @include respond-to(mobileSmall) {
       @include flexAlignCenter(column);
     }
   }
