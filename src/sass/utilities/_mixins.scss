@@ -48,19 +48,19 @@
       @content;
     }
   } @else if $point == mobileMedium {
-    @media (orientation: portrait) and (min-width: 375px) {
+    @media (orientation: portrait) and (min-width: 360px) {
       @content;
     }
   } @else if $point == mobileLarge {
     @media (orientation: portrait) and (min-width: 414px) {
       @content;
     }
-  } @else if $point == webSmall {
-    @media (min-width: 550px) {
+  } @else if $point == tabletView {
+    @media (orientation: portrait) and (min-width: 550px) {
       @content;
     }
   } @else if $point == webMedium {
-    @media (max-width: 750px) {
+    @media (max-width: 770px) {
       @content;
     }
   } @else if $point == webLarge {
