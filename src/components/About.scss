@@ -6,21 +6,27 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   margin-top: 54px;
-  @include respond-to(mobileSmall) {
+  @include respond-to("mobileSmall") {
     @include flexAlignCenter(column);
     min-height: 145vh;
   }
-  @include respond-to(mobileMedium) {
+  @include respond-to("mobileMedium") {
     min-height: 125vh;
   }
+  // @include respond-to("mobileLarge") {
+  //   min-height: 140vh;
+  // }
 
   .about-title {
     grid-row: 1 / 2;
     grid-column: 4 / 6;
     @include title(80px);
-    animation: pop-in 1s ease-out forwards;
-    @include respond-to(mobileSmall) {
+    animation: pop-in 0.7s ease-out forwards;
+    @include respond-to("mobileSmall") {
       font-size: 44px;
+    }
+    @include respond-to("mobileMedium") {
+      font-size: 50px;
     }
   }
 
@@ -31,10 +37,11 @@
     align-self: center;
     justify-self: center;
     border-top: $border;
-    animation: pop-img 1s ease-out forwards;
-    @include respond-to(mobileSmall) {
+    animation: pop-img 0.7s ease-out forwards;
+    @include respond-to("mobileSmall") {
       width: 80vw;
       height: auto;
+      animation: pop-in 0.7s ease-out forwards;
     }
   }
 
@@ -45,36 +52,35 @@
     padding-bottom: 80px;
     border-bottom: $border;
     text-align: justify;
-    animation: pop-in 1s ease-out forwards;
-    @include respond-to(mobileSmall) {
+    animation: pop-in 0.7s ease-out forwards;
+    @include respond-to("mobileSmall") {
       font-size: 18px;
       margin: 20px 15px;
       padding-bottom: 40px;
+      animation: none;
+    }
+    @include respond-to("mobileLarge") {
+      font-size: 20px;
     }
   }
 
   @keyframes pop-in {
     0% {
-      opacity: 0;
+      opacity: 0.4;
       transform: translateY(-5rem) scale(0.9);
     }
-    20% {
-      transform: translateY(4rem);
-    }
+
     100% {
       opacity: 1;
       transform: none;
     }
   }
-
   @keyframes pop-img {
     0% {
       opacity: 0;
       transform: translateX(-5rem) scale(0.9);
     }
-    20% {
-      transform: translateX(4rem);
-    }
+
     100% {
       opacity: 1;
       transform: none;

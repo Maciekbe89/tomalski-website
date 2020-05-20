@@ -23,47 +23,28 @@
   align-items: center;
 }
 
-// @mixin respond-to($breakpoint) {
-//   $raw-query: map-get($breakpoints, $breakpoint);
-
-//   @if $raw-query {
-//     $query: if(
-//       type-of($raw-query) == "string",
-//       unquote($raw-query),
-//       inspect($raw-query)
-//     );
-
-//     @media #{$query} {
-//       @content;
-//     }
-//   } @else {
-//     @error 'No value found for `#{$breakpoint}`. '
-//          + 'Please make sure it is defined in `$breakpoints` map.';
-//   }
-// }
-
 @mixin respond-to($point) {
   @if $point == mobileSmall {
     @media (orientation: portrait) and (min-width: 320px) {
       @content;
     }
-  } @else if $point == mobileMedium {
+  } @else if $point == "mobileMedium" {
     @media (orientation: portrait) and (min-width: 360px) {
       @content;
     }
-  } @else if $point == mobileLarge {
-    @media (orientation: portrait) and (min-width: 414px) {
+  } @else if $point == "mobileLarge" {
+    @media (orientation: portrait) and (min-width: 411px) {
       @content;
     }
-  } @else if $point == tabletView {
+  } @else if $point == "tabletView" {
     @media (orientation: portrait) and (min-width: 550px) {
       @content;
     }
-  } @else if $point == webMedium {
+  } @else if $point == "webMedium" {
     @media (max-width: 770px) {
       @content;
     }
-  } @else if $point == webLarge {
+  } @else if $point == "webLarge" {
     @media (min-width: 1350px) {
       @content;
     }

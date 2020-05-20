@@ -5,7 +5,7 @@
   @include flexAlignCenter(column);
   width: 32.5vw;
   justify-content: space-evenly;
-  @include respond-to(mobileSmall) {
+  @include respond-to("mobileSmall") {
     width: 100vw;
     height: 75vh;
   }
@@ -17,6 +17,9 @@
   .cd-title {
     color: #fff;
     font-size: 20px;
+    @include respond-to("mobileMedium") {
+      font-size: 28px;
+    }
   }
 
   .download-button {
@@ -29,6 +32,9 @@
     background-color: $main-color;
     border: none;
     transition: linear 0.1s;
+    @include respond-to("mobileMedium") {
+      font-size: 16px;
+    }
 
     &:hover {
       box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.65);

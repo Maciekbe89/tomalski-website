@@ -11,20 +11,24 @@
   }
   .title {
     @include title(80px);
-    @include respond-to(mobileSmall) {
+    @include respond-to("mobileSmall") {
       font-size: 44px;
+    }
+    @include respond-to("mobileMedium") {
+      font-size: 50px;
     }
   }
   .icons-container {
     @include flexAlignCenter(row);
-    @include respond-to(mobileSmall) {
+    @include respond-to("mobileSmall") {
       flex-direction: column;
     }
   }
   .icon-container {
+    justify-content: center;
     @include flexAlignCenter(column);
     width: 32.9vw;
-    @include respond-to(mobileSmall) {
+    @include respond-to("mobileSmall") {
       height: 33vh;
     }
   }
@@ -32,11 +36,17 @@
     font-size: 80px;
     color: $main-color;
     margin-bottom: 10px;
+    @include respond-to("mobileLarge") {
+      font-size: 100px;
+    }
   }
 
   .contact-text {
     color: white;
     font-size: 28px;
+    @include respond-to("mobileLarge") {
+      font-size: 34px;
+    }
   }
   .contact-link {
     &:after {
@@ -50,11 +60,5 @@
     &:hover::after {
       width: 100%;
     }
-  }
-}
-
-@media (orientation: portrait) and (min-width: 360px) {
-  .contact-container {
-    min-height: 110vh;
   }
 }
