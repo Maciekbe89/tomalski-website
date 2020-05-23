@@ -5,7 +5,7 @@
   @include pageContainer(grid, $footer: true);
   @include bgGradient(341deg);
   grid-template-rows: 3fr 5fr 1fr;
-  @include respond-to(mobileSmall) {
+  @include respond-to("mobileSmall") {
     min-height: 120vh;
     @include bgGradient(336deg);
   }
@@ -16,6 +16,12 @@
     }
     @include respond-to("mobileMedium") {
       font-size: 50px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 64px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 88px;
     }
   }
   .icons-container {
@@ -39,6 +45,12 @@
     @include respond-to("mobileLarge") {
       font-size: 100px;
     }
+    @include respond-to("tabletMedium") {
+      font-size: 150px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 200px;
+    }
   }
 
   .contact-text {
@@ -46,6 +58,12 @@
     font-size: 28px;
     @include respond-to("mobileLarge") {
       font-size: 34px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 44px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 56px;
     }
   }
   .contact-link {

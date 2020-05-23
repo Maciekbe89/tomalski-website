@@ -3,7 +3,7 @@
 
 .discography-container {
   @include pageContainer(grid);
-  grid-template-rows: 100px 5fr;
+  grid-template-rows: 1fr 15fr;
   @include bgGradient(150deg);
 
   @include respond-to("mobileSmall") {
@@ -17,6 +17,12 @@
     }
     @include respond-to("mobileMedium") {
       font-size: 50px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 64px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 88px;
     }
   }
   .cds-container {

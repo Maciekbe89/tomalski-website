@@ -9,12 +9,20 @@
   justify-content: space-evenly;
 
   .clips-title {
+    text-align: center;
     @include respond-to("mobileSmall") {
       font-size: 24px;
       margin: 0 20px;
     }
     @include respond-to("mobileMedium") {
       font-size: 28px;
+    }
+
+    @include respond-to("tabletMedium") {
+      font-size: 40px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 55px;
     }
   }
   .clip-yt {
@@ -24,7 +32,7 @@
     border-top: $border;
     @include respond-to("mobileSmall") {
       width: 90vw;
-      height: 32vh;
+      height: 35vh;
     }
   }
 }

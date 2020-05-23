@@ -9,12 +9,18 @@
   height: 55px;
   background-color: #000;
   z-index: 1;
+  @include respond-to("tabletLarge") {
+    height: 85px;
+  }
 
   .navbar-logo {
     width: 150px;
     align-self: center;
     margin: 30px 15px 0 15px;
     cursor: pointer;
+    @include respond-to("tabletLarge") {
+      width: 200px;
+    }
   }
 
   .navbar-items-container {
@@ -47,6 +53,9 @@
         }
         @include respond-to("mobileLarge") {
           font-size: 26px;
+        }
+        @include respond-to("tabletMedium") {
+          font-size: 32px;
         }
         &.active {
           border-bottom: 1px solid #fff;

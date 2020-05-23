@@ -25,5 +25,11 @@
     @include respond-to("mobileLarge") {
       padding-top: 90px;
     }
+    @include respond-to("tabletMedium") {
+      padding-top: 130px;
+    }
+    @include respond-to("tabletLarge") {
+      width: 80%;
+    }
   }
 }

@@ -13,8 +13,8 @@
   @include respond-to("mobileMedium") {
     min-height: 125vh;
   }
-  // @include respond-to("mobileLarge") {
-  //   min-height: 140vh;
+  // @include respond-to("tabletLarge") {
+  //   min-height: 130vh;
   // }
 
   .about-title {
@@ -28,10 +28,16 @@
     @include respond-to("mobileMedium") {
       font-size: 50px;
     }
+    @include respond-to("tabletMedium") {
+      font-size: 64px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 88px;
+    }
   }
 
   .image-about {
-    height: 75%;
+    width: 75%;
     grid-row: 1 / -1;
     grid-column: 1 / 4;
     align-self: center;
@@ -55,12 +61,18 @@
     animation: pop-in 0.7s ease-out forwards;
     @include respond-to("mobileSmall") {
       font-size: 18px;
-      margin: 20px 15px;
+      margin: 20px;
       padding-bottom: 40px;
       animation: none;
     }
     @include respond-to("mobileLarge") {
       font-size: 20px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 24px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 30px;
     }
   }
 

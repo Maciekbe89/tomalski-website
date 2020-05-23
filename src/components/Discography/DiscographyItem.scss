@@ -13,12 +13,18 @@
     width: 100%;
     border-top: $border;
   }
+  @include respond-to("tabletMedium") {
+    width: 75%;
+  }
 
   .cd-title {
     color: #fff;
     font-size: 20px;
     @include respond-to("mobileMedium") {
       font-size: 28px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 34px;
     }
   }
 
@@ -34,6 +40,9 @@
     transition: linear 0.1s;
     @include respond-to("mobileMedium") {
       font-size: 16px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 22px;
     }
 
     &:hover {
