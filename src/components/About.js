@@ -1,14 +1,12 @@
 import React from "react";
 import TmlPortait from "../assets/tml.png";
-import "./About.scss";
+import "../sass/pages/_about.scss";
 
 const About = () => {
   return (
     <div className="pages-container container-about" id="about">
       <h1 className="about-title">o mnie</h1>
-      {/* <div className="image-container"> */}
       <img className="image-about" src={TmlPortait} alt="portrait" />
-      {/* </div> */}
       <p className="about-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut
         hendrerit est, vitae vehicula lectus. Sed convallis lobortis orci eget

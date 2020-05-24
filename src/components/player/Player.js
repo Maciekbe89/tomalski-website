@@ -1,7 +1,7 @@
 import React from "react";
 import MusicPlayer from "react-responsive-music-player";
 import playlist from "./playlist";
-import "./Player.scss";
+import "../../sass/pages/_clips.scss";
 
 const Player = () => {
   return (

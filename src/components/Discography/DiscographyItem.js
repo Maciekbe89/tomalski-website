@@ -1,5 +1,5 @@
 import React from "react";
-import "./DiscographyItem.scss";
+import "../../sass/pages/_discographyItem.scss";
 
 const DiscographyItem = ({title, coverCdFront, coverCdBack}) => {
   return (

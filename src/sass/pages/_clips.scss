@@ -1,5 +1,5 @@
-@import "../sass/utilities/variables";
-@import "../sass/utilities/mixins";
+@import "../utilities/variables";
+@import "../utilities/mixins";
 
 .clips-container {
   @include pageContainer(flex);
@@ -27,7 +27,7 @@
   }
   .clip-yt {
     width: 60%;
-    height: 70%;
+    height: 60%;
     border: none;
     border-top: $border;
     @include respond-to("mobileSmall") {

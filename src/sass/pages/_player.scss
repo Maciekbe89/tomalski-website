@@ -1,5 +1,5 @@
-@import "../../sass/utilities/variables";
-@import "../../sass/utilities/mixins";
+@import "../utilities/variables";
+@import "../utilities/mixins";
 
 .player-container {
   @include pageContainer(flex);
