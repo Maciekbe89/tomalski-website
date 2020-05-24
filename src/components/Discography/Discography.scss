@@ -3,7 +3,7 @@
 
 .discography-container {
   @include pageContainer(grid);
-  grid-template-rows: 1fr 15fr;
+  grid-template-rows: 12vh 5fr;
   @include bgGradient(150deg);
 
   @include respond-to("mobileSmall") {

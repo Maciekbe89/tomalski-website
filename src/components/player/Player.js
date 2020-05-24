@@ -5,19 +5,17 @@ import "./Player.scss";
 
 const Player = () => {
   return (
-    <div className="pages-container player-container" id="player">
-      {/* <h1 className="title">odsłuch płyty</h1> */}
+    <div className="player-container" id="player">
       <div className="music-player">
         <MusicPlayer
           playlist={playlist}
           style={{
-            fontSize: "22px",
-            color: "#f79c00",
+            fontSize: "24px",
+            maxWidth: "none",
           }}
           mode="vertical"
           progressColor="#f79c00"
           btnColor="white"
-          width="100%"
         />
       </div>
     </div>

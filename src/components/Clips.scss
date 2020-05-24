@@ -26,13 +26,13 @@
     }
   }
   .clip-yt {
-    width: 560px;
-    height: 315px;
+    width: 60%;
+    height: 70%;
     border: none;
     border-top: $border;
     @include respond-to("mobileSmall") {
       width: 90vw;
-      height: 35vh;
+      height: 50vw;
     }
   }
 }

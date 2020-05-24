@@ -6,30 +6,72 @@
   @include bgGradient(200deg);
   justify-content: center;
   @include respond-to("mobileSmall") {
-    min-height: 91vh;
+    min-height: 80vh;
+  }
+  .player {
+    .player-control {
+      .music-info {
+        .title {
+          color: $main-color;
+          @include respond-to("mobileSmall") {
+            font-size: 24px;
+          }
+          @include respond-to("mobileMedium") {
+            font-size: 28px;
+          }
+          @include respond-to("mobileLarge") {
+            font-size: 36px;
+          }
+          @include respond-to("tabletMedium") {
+            font-size: 46px;
+          }
+        }
+        .artist {
+          color: #fff;
+          @include respond-to("tabletMedium") {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+    .player-cover {
+      margin-bottom: 30px;
+      @include respond-to("mobileSmall") {
+        margin-bottom: 0;
+      }
+      @include respond-to("mobileMedium") {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+      }
+      @include respond-to("mobileLarge") {
+        margin-bottom: 60px;
+      }
+      @include respond-to("tabletMedium") {
+        width: 500px;
+        height: 500px;
+      }
+      @include respond-to("tabletLarge") {
+        width: 700px;
+        height: 700px;
+      }
+    }
   }
 
   .music-player {
-    width: 62%;
+    width: 70%;
     align-self: center;
-    color: #fff;
-    padding-top: 70px;
+    padding-top: 50px;
     border-top: $border;
     @include respond-to("mobileSmall") {
       width: 85vw;
       padding-top: 30px;
     }
-    @include respond-to("mobileMedium") {
-      padding-top: 70px;
-    }
     @include respond-to("mobileLarge") {
-      padding-top: 90px;
+      padding-top: 60px;
     }
     @include respond-to("tabletMedium") {
-      padding-top: 130px;
-    }
-    @include respond-to("tabletLarge") {
-      width: 80%;
+      padding-top: 80px;
     }
   }
 }
