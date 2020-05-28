@@ -3,15 +3,17 @@
 
 .discography-container {
   @include pageContainer(grid);
-  grid-template-rows: 12vh 5fr;
+  grid-template-rows: 100px 5fr;
   @include bgGradient(150deg);
 
   @include respond-to("mobileSmall") {
     @include bgGradient(121deg);
-    min-height: 250vh;
+  }
+  @include respond-to("tabletLarge") {
+    grid-template-rows: 200px 5fr;
   }
   .title {
-    @include title(60px);
+    @include title;
     @include respond-to("mobileSmall") {
       font-size: 44px;
     }

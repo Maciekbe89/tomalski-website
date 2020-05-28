@@ -4,13 +4,15 @@
 .contact-container {
   @include pageContainer(grid, $footer: true);
   @include bgGradient(341deg);
-  grid-template-rows: 3fr 5fr 1fr;
+  grid-template-rows: 120px 5fr;
   @include respond-to("mobileSmall") {
-    min-height: 120vh;
     @include bgGradient(336deg);
   }
+  @include respond-to("tabletLarge") {
+    grid-template-rows: 180px 5fr;
+  }
   .title {
-    @include title(80px);
+    @include title;
     @include respond-to("mobileSmall") {
       font-size: 44px;
     }
@@ -26,7 +28,7 @@
   }
   .icons-container {
     @include flexAlignCenter(row);
-    @include respond-to("mobileSmall") {
+    @include respond-to("webMedium") {
       flex-direction: column;
     }
   }
@@ -39,7 +41,7 @@
     }
   }
   .icon {
-    font-size: 80px;
+    font-size: 100px;
     color: $main-color;
     margin-bottom: 10px;
     @include respond-to("mobileLarge") {
@@ -55,7 +57,7 @@
 
   .contact-text {
     color: white;
-    font-size: 28px;
+    font-size: 30px;
     @include respond-to("mobileLarge") {
       font-size: 34px;
     }

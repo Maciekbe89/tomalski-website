@@ -26,8 +26,8 @@
     }
   }
   .clip-yt {
-    width: 60%;
-    height: 60%;
+    width: 60vw;
+    height: 55vh;
     border: none;
     border-top: $border;
     @include respond-to("mobileSmall") {

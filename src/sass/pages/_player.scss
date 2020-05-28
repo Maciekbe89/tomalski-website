@@ -5,9 +5,7 @@
   @include pageContainer(flex);
   @include bgGradient(200deg);
   justify-content: center;
-  @include respond-to("mobileSmall") {
-    min-height: 80vh;
-  }
+
   .player {
     .player-control {
       .music-info {
@@ -25,11 +23,17 @@
           @include respond-to("tabletMedium") {
             font-size: 46px;
           }
+          @include respond-to("tabletLarge") {
+            font-size: 64px;
+          }
         }
         .artist {
           color: #fff;
           @include respond-to("tabletMedium") {
             font-size: 32px;
+          }
+          @include respond-to("tabletLarge") {
+            font-size: 50px;
           }
         }
       }
@@ -46,6 +50,9 @@
       }
       @include respond-to("mobileLarge") {
         margin-bottom: 60px;
+      }
+      @include respond-to("tabletSmall") {
+        margin-bottom: 30px;
       }
       @include respond-to("tabletMedium") {
         width: 500px;
@@ -69,6 +76,9 @@
     }
     @include respond-to("mobileLarge") {
       padding-top: 60px;
+    }
+    @include respond-to("tabletSmall") {
+      padding-top: 30px;
     }
     @include respond-to("tabletMedium") {
       padding-top: 80px;

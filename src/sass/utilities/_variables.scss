@@ -27,12 +27,19 @@ $breakpoints: (
   (
     min-width: 411px,
   ),
+  "tabletSmall": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 550px,
+  ),
   "tabletMedium": (
     orientation: portrait,
   )
   and
   (
-    min-width: 600px,
+    min-width: 760px,
   ),
   "tabletLarge": (
     orientation: portrait,

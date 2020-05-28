@@ -8,10 +8,6 @@
   margin-top: 54px;
   @include respond-to("mobileSmall") {
     @include flexAlignCenter(column);
-    min-height: 145vh;
-  }
-  @include respond-to("mobileMedium") {
-    min-height: 125vh;
   }
   .record {
     background-size: contain;

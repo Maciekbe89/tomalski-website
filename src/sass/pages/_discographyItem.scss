@@ -13,6 +13,10 @@
     width: 100%;
     border-top: $border;
   }
+
+  @include respond-to("tabletSmall") {
+    width: 65%;
+  }
   @include respond-to("tabletMedium") {
     width: 75%;
   }
@@ -25,6 +29,9 @@
     }
     @include respond-to("tabletMedium") {
       font-size: 34px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 48px;
     }
   }
 
@@ -43,6 +50,9 @@
     }
     @include respond-to("tabletMedium") {
       font-size: 22px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 32px;
     }
 
     &:hover {

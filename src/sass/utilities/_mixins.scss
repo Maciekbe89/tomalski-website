@@ -1,15 +1,15 @@
 @mixin pageContainer($display, $footer: false) {
   display: $display;
-  height: calc(100vh - 55px);
+  min-height: calc(100vh - 55px);
   @if $footer {
-    height: calc(100vh - 85px);
+    min-height: calc(100vh - 85px);
   }
 }
 
-@mixin title($size) {
+@mixin title {
   align-self: center;
   justify-self: center;
-  font-size: $size;
+  font-size: 60px;
   color: $main-color;
 }
 
