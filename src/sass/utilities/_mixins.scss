@@ -1,0 +1,41 @@
+@mixin pageContainer($display, $footer: false) {
+  display: $display;
+  min-height: calc(100vh - 55px);
+  @if $footer {
+    min-height: calc(100vh - 85px);
+  }
+}
+
+@mixin title {
+  align-self: center;
+  justify-self: center;
+  font-size: 60px;
+  color: $main-color;
+}
+
+@mixin bgGradient($deg) {
+  background-image: linear-gradient($deg, $bg-color 60%, $main-color 200%);
+}
+
+@mixin flexAlignCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+  @if $raw-query {
+    $query: if(
+      $breakpoint == "webMedium",
+      inspect($raw-query),
+      inspect($raw-query) + "and (orientation: portrait)"
+    );
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

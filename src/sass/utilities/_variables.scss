@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+$main-font: "Oswald", sans-serif;
+$main-color: #f79c00;
+$bg-color: #1c1a18;
+$border: solid 3px $main-color;
+
+$breakpoints: (
+  "mobileSmall": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 320px,
+  ),
+  "mobileMedium": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 360px,
+  ),
+  "mobileLarge": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 411px,
+  ),
+  "tabletSmall": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 550px,
+  ),
+  "tabletMedium": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 760px,
+  ),
+  "tabletLarge": (
+    orientation: portrait,
+  )
+  and
+  (
+    min-width: 1000px,
+  ),
+  "webMedium": (
+    max-width: 790px,
+  ),
+);

@@ -1,0 +1,87 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.player-container {
+  @include pageContainer(flex);
+  @include bgGradient(200deg);
+  justify-content: center;
+
+  .player {
+    .player-control {
+      .music-info {
+        .title {
+          color: $main-color;
+          @include respond-to("mobileSmall") {
+            font-size: 24px;
+          }
+          @include respond-to("mobileMedium") {
+            font-size: 28px;
+          }
+          @include respond-to("mobileLarge") {
+            font-size: 36px;
+          }
+          @include respond-to("tabletMedium") {
+            font-size: 46px;
+          }
+          @include respond-to("tabletLarge") {
+            font-size: 64px;
+          }
+        }
+        .artist {
+          color: #fff;
+          @include respond-to("tabletMedium") {
+            font-size: 32px;
+          }
+          @include respond-to("tabletLarge") {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+    .player-cover {
+      margin-bottom: 30px;
+      @include respond-to("mobileSmall") {
+        margin-bottom: 0;
+      }
+      @include respond-to("mobileMedium") {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+      }
+      @include respond-to("mobileLarge") {
+        margin-bottom: 60px;
+      }
+      @include respond-to("tabletSmall") {
+        margin-bottom: 30px;
+      }
+      @include respond-to("tabletMedium") {
+        width: 500px;
+        height: 500px;
+      }
+      @include respond-to("tabletLarge") {
+        width: 700px;
+        height: 700px;
+      }
+    }
+  }
+
+  .music-player {
+    width: 70%;
+    align-self: center;
+    padding-top: 50px;
+    border-top: $border;
+    @include respond-to("mobileSmall") {
+      width: 85vw;
+      padding-top: 30px;
+    }
+    @include respond-to("mobileLarge") {
+      padding-top: 60px;
+    }
+    @include respond-to("tabletSmall") {
+      padding-top: 30px;
+    }
+    @include respond-to("tabletMedium") {
+      padding-top: 80px;
+    }
+  }
+}

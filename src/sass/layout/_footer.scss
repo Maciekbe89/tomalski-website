@@ -1,8 +1,10 @@
+@import "../utilities/variables";
+
 .footer {
   height: 30px;
   border-top: solid 1px black;
   font-size: 12px;
   line-height: 30px;
   padding-left: 10px;
-  color: var(--main-color);
+  color: $main-color;
 }

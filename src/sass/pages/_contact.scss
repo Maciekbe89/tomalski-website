@@ -1,0 +1,84 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.contact-container {
+  @include pageContainer(grid, $footer: true);
+  @include bgGradient(341deg);
+  grid-template-rows: 120px 5fr;
+  @include respond-to("mobileSmall") {
+    @include bgGradient(336deg);
+  }
+  @include respond-to("tabletLarge") {
+    grid-template-rows: 180px 5fr;
+  }
+  .title {
+    @include title;
+    @include respond-to("mobileSmall") {
+      font-size: 44px;
+    }
+    @include respond-to("mobileMedium") {
+      font-size: 50px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 64px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 88px;
+    }
+  }
+  .icons-container {
+    @include flexAlignCenter(row);
+    @include respond-to("webMedium") {
+      flex-direction: column;
+    }
+  }
+  .icon-container {
+    justify-content: center;
+    @include flexAlignCenter(column);
+    width: 32.9vw;
+    @include respond-to("mobileSmall") {
+      height: 33vh;
+    }
+  }
+  .icon {
+    font-size: 100px;
+    color: $main-color;
+    margin-bottom: 10px;
+    @include respond-to("mobileLarge") {
+      font-size: 100px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 150px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 200px;
+    }
+  }
+
+  .contact-text {
+    color: white;
+    font-size: 30px;
+    @include respond-to("mobileLarge") {
+      font-size: 34px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 44px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 56px;
+    }
+  }
+  .contact-link {
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.4s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

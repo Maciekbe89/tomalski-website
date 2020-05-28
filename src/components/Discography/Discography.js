@@ -1,7 +1,7 @@
 import React from "react";
 import DiscographyItem from "./DiscographyItem";
 import coverInfos from "../../utils/CoverInfos";
-import "./Discography.css";
+import "../../sass/pages/_discography.scss";
 
 const Discography = () => {
   return (

@@ -1,0 +1,84 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.item-container {
+  @include flexAlignCenter(column);
+  width: 32.5vw;
+  justify-content: space-evenly;
+  @include respond-to("mobileSmall") {
+    width: 100vw;
+    height: 75vh;
+  }
+  .cover {
+    width: 100%;
+    border-top: $border;
+  }
+
+  @include respond-to("tabletSmall") {
+    width: 65%;
+  }
+  @include respond-to("tabletMedium") {
+    width: 75%;
+  }
+
+  .cd-title {
+    color: #fff;
+    font-size: 20px;
+    @include respond-to("mobileMedium") {
+      font-size: 28px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 34px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 48px;
+    }
+  }
+
+  .download-button {
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    background-color: $main-color;
+    border: none;
+    transition: linear 0.1s;
+    @include respond-to("mobileMedium") {
+      font-size: 16px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 22px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 32px;
+    }
+
+    &:hover {
+      box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.65);
+      color: $main-color;
+      background-color: #fff;
+      letter-spacing: 0.4px;
+    }
+  }
+  .thecard {
+    width: 70%;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
+
+    .front-cover {
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .back-cover {
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+    }
+  }
+}

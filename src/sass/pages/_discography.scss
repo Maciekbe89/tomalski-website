@@ -1,0 +1,37 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.discography-container {
+  @include pageContainer(grid);
+  grid-template-rows: 100px 5fr;
+  @include bgGradient(150deg);
+
+  @include respond-to("mobileSmall") {
+    @include bgGradient(121deg);
+  }
+  @include respond-to("tabletLarge") {
+    grid-template-rows: 200px 5fr;
+  }
+  .title {
+    @include title;
+    @include respond-to("mobileSmall") {
+      font-size: 44px;
+    }
+    @include respond-to("mobileMedium") {
+      font-size: 50px;
+    }
+    @include respond-to("tabletMedium") {
+      font-size: 64px;
+    }
+    @include respond-to("tabletLarge") {
+      font-size: 88px;
+    }
+  }
+  .cds-container {
+    display: flex;
+    margin: 0 auto;
+    @include respond-to("mobileSmall") {
+      @include flexAlignCenter(column);
+    }
+  }
+}
