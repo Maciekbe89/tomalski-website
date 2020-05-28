@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import TmlPortait from "../assets/tml.png";
 import "../sass/pages/_about.scss";
 
 const About = () => {
+  const [move, setMove] = useState(-30);
+
+  useEffect(() => {
+    let id = setInterval(() => {
+      setMove(move + 2);
+    }, 30);
+    return () => clearInterval(id);
+  });
+
   return (
-    <div className="pages-container container-about" id="about">
+    <div className="container-about" id="about">
+      <div
+        className="record"
+        style={{transform: `translateY(40%) rotate(${move}deg)`}}
+      />
+
       <h1 className="about-title">o mnie</h1>
       <img className="image-about" src={TmlPortait} alt="portrait" />
       <p className="about-text">
