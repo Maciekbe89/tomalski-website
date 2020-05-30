@@ -10,16 +10,19 @@ const CoverInfos = [
     title: "0.01 Klimatyczne EP 2020",
     coverCdFront: `${CD2020front}`,
     coverCdBack: `${CD2020back}`,
+    download: "http://tomalski.bly.sk/Tomalski_0.01_Klimatyczne_EP.zip",
   },
   {
     title: "Na kartkach pasja EP 2008",
     coverCdFront: `${CD2008front}`,
     coverCdBack: `${CD2008back}`,
+    download: "http://wp.pl",
   },
   {
     title: "Ukryty Sens EP 2006",
     coverCdFront: `${CD2006front}`,
     coverCdBack: `${CD2006back}`,
+    download: "http://wp.pl",
   },
 ];
 

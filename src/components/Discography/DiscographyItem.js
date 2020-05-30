@@ -1,7 +1,6 @@
 import React from "react";
-import "../../sass/pages/_discographyItem.scss";
 
-const DiscographyItem = ({title, coverCdFront, coverCdBack}) => {
+const DiscographyItem = ({title, coverCdFront, coverCdBack, download}) => {
   return (
     <div className="item-container" key={title}>
       <h1 className="cd-title">{title}</h1>
@@ -9,7 +8,11 @@ const DiscographyItem = ({title, coverCdFront, coverCdBack}) => {
         <img className="cover front-cover" src={coverCdFront} alt="cover" />
         <img className="cover back-cover" src={coverCdBack} alt="cover" />
       </div>
-      <button className="download-button">ściągnij płyte</button>
+      <button className="download-button">
+        <a className="link" href={download}>
+          ściągnij płyte
+        </a>
+      </button>
     </div>
   );
 };

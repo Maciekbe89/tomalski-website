@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/pages/_clips.scss";
 
 const videoSrc = "https://www.youtube.com/embed/e4a4RE540wg";
 

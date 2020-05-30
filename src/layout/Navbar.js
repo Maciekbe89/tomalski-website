@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import TmlLogo from "../assets/logo2.png";
 import {Link, animateScroll as scroll} from "react-scroll";
 import navbarLinks from "../utils/NavbarLinks";
-import "../sass/layout/_navbar.scss";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
