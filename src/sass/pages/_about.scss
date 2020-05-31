@@ -6,15 +6,22 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   margin-top: 54px;
-  @include respond-to("mobileSmall") {
+  @include respond-to("webMedium") {
     @include flexAlignCenter(column);
   }
+  @include respond-to("tabletLarge") {
+    @include flexAlignCenter(column);
+  }
+
   .record {
     background-size: contain;
     background-image: url("../../assets/record.svg");
     height: 100px;
     width: 100px;
-    @include respond-to("mobileSmall") {
+    @include respond-to("webMedium") {
+      display: none;
+    }
+    @include respond-to("tabletLarge") {
       display: none;
     }
   }
@@ -22,14 +29,9 @@
   .about-title {
     grid-row: 1 / 2;
     grid-column: 4 / 6;
-    @include title;
+    white-space: nowrap;
+    @include title(35px);
     animation: pop-in 0.7s ease-out forwards;
-    @include respond-to("mobileSmall") {
-      font-size: 44px;
-    }
-    @include respond-to("mobileMedium") {
-      font-size: 50px;
-    }
     @include respond-to("tabletMedium") {
       font-size: 64px;
     }
@@ -39,14 +41,14 @@
   }
 
   .image-about {
-    height: 70%;
+    height: 70vh;
     grid-row: 1 / -1;
     grid-column: 1 / 4;
     align-self: center;
     justify-self: center;
     border-top: $border;
     animation: pop-img 0.7s ease-out forwards;
-    @include respond-to("mobileSmall") {
+    @include respond-to("webMedium") {
       width: 80vw;
       height: auto;
       animation: pop-in 0.7s ease-out forwards;
@@ -61,7 +63,7 @@
     border-bottom: $border;
     text-align: justify;
     animation: pop-in 0.7s ease-out forwards;
-    @include respond-to("mobileSmall") {
+    @include respond-to("webMedium") {
       font-size: 16px;
       margin: 20px;
       padding-bottom: 40px;
@@ -75,6 +77,7 @@
     }
     @include respond-to("tabletLarge") {
       font-size: 30px;
+      margin: 30px;
     }
   }
 

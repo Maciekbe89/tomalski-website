@@ -6,10 +6,10 @@
   }
 }
 
-@mixin title {
+@mixin title($size) {
   align-self: center;
   justify-self: center;
-  font-size: 60px;
+  font-size: $size;
   color: $main-color;
 }
 
