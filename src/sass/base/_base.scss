@@ -9,7 +9,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: $main-color;
+  background-color: $bg-color;
   &::-webkit-scrollbar {
     width: 10px;
     background-color: #555;
@@ -23,7 +23,6 @@ body {
   }
 
   .main-container {
-    background-color: $bg-color;
     color: #fff;
     .link {
       text-decoration: none;

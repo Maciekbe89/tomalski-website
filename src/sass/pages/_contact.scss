@@ -56,7 +56,6 @@
   }
 
   .contact-text {
-    color: white;
     font-size: 30px;
     @include respond-to("mobileLarge") {
       font-size: 34px;
