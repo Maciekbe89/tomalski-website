@@ -18,7 +18,7 @@ On the left-top is logo, when we click it, view will return to the first section
 
 It works well in multiple resolutions (mobile, tablet, desktop).
 
-![src/assets/screens/screen2.png](src/assets/screens/scree2.png)
-![src/assets/screens/screen3.png](src/assets/screens/scree3.png)
+![src/assets/screens/screen2.png](src/assets/screens/screen2.png)
+![src/assets/screens/screen3.png](src/assets/screens/screen3.png)
 
 ## Thanks!
